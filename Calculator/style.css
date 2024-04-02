@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/wallpaperflare.com_wallpaper\ \(2\).jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calculator{
+    background: black;
+    padding: 10px;
+    border-radius: 10%;
+}
+.calculator form input{
+    border: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 3px;
+}
+#zero{
+    width: 130px;
+    border-radius: 25px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+form .display input{
+    width: 240px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+}
+.orange{
+    background-color: orange;
+    color: white;
+}
+.grey{
+    background-color: rgb(214, 210, 210);
+}
+.default{
+    background-color: rgb(71, 68, 68);
+    color: white;
+}
+.App{
+    position: fixed;
+    top: 30px;
+    font-size: 30px;
+    background-color: transparent;
+    color: aliceblue;
+}
+.real{
+    width: 350px;
+    height: 700px;
+    background-image: url("/WhatsApp\ Image\ 2024-04-02\ at\ 00.28.33_1e90839f.jpg");
+    background-size: cover;
+    position: fixed;
+    right: 80px;
+    top: 80px;
+    border-radius: 30px;
+}
+.calculator form input:hover{
+    border: 2px solid black;
+}
+.orange:active{
+    background-color: orangered;
+}
+.default:active{
+    background-color: rgb(216, 54, 54);
+}
