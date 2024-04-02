@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="real"></div>
+        <div class="App">
+            <h1>iPhone 14 CALCULATOR REPLICA</h1>
+        </div>
+      
+        <div class="calculator">
+            <form name="calcForm">
+                <div class="display">
+                    <input type="text" id="display" name="display" readonly>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()" class="grey">
+                    <input type="button" value="DEL" onclick="deleteLast()" class="grey">
+                    <input type="button" value="%" onclick="append('%')" class="grey">
+                    <input type="button" value="/" class="orange" onclick="append('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="append('7')" class="default">
+                    <input type="button" value="8" onclick="append('8')"class="default">
+                    <input type="button" value="9" onclick="append('9')"class="default">
+                    <input type="button" value="X" class="orange" onclick="append('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="append('4')"class="default">
+                    <input type="button" value="5" onclick="append('5')"class="default">
+                    <input type="button" value="6" onclick="append('6')"class="default">
+                    <input type="button" value="-" class="orange" onclick="append('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="append('1')"class="default">
+                    <input type="button" value="2" onclick="append('2')"class="default">
+                    <input type="button" value="3" onclick="append('3')"class="default">
+                    <input type="button" value="+" class="orange" onclick="append('+')">
+                </div>
+                <input type="button" value="0" id="zero" onclick="append('0')"class="default">
+                <input type="button" value="." onclick="append('.')"class="default">
+                <input type="button" value="=" class="orange" onclick="calculate()">
+            </form>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
